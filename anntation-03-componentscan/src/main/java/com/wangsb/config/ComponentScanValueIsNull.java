@@ -1,0 +1,13 @@
+package com.wangsb.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author wangshenbing
+ * @date 2024/01/08
+ **/
+@Configuration
+@ComponentScan()
+public class ComponentScanValueIsNull {
+}
