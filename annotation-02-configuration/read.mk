@@ -1,9 +1,9 @@
-作用：
-	它是在spring3.0版本之后加入的。此注解是spring支持注解驱动开发的一个标志。表明当前类是spring的一个配置类，
-	作用是替代spring的applicationContext.xml。但其本质就是@Component注解，被此注解修饰的类，也会被存入spring的ioc容器。
-属性：
+作用:
+	它是在spring3.0版本之后加入的.此注解是spring支持注解驱动开发的一个标志.表明当前类是spring的一个配置类,
+	作用是替代spring的applicationContext.xml.但其本质就是@Component注解,被此注解修饰的类,也会被存入spring的ioc容器.
+属性:
 	value:
-		用于存入spring的Ioc容器中Bean的id。
-使用场景：
-	在注解驱动开发时，用于编写配置的类，通常可以使用此注解。一般情况下，我们的配置也会分为主从配置，@Configuration一般出现在主配置类上。
-	例如，入门案例中的SpringConfiguration类上。值得注意的是，如果我们在注解驱动开发时，构建ioc容器使用的是传入字节码的构造函数，此注解可以省略。但是如果传入的是一个包，此注解则不能省略。
+		用于存入spring的Ioc容器中Bean的id.
+使用场景:
+	在注解驱动开发时,用于编写配置的类,通常可以使用此注解.一般情况下,我们的配置也会分为主从配置,@Configuration一般出现在主配置类上.
+	例如,入门案例中的SpringConfiguration类上.值得注意的是,如果我们在注解驱动开发时,构建ioc容器使用的是传入字节码的构造函数,此注解可以省略.但是如果传入的是一个包,此注解则不能省略.

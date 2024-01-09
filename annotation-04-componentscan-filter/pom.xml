@@ -5,14 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wangsb</groupId>
-    <artifactId>anntation-03-componentscan</artifactId>
+    <artifactId>annotation-04-componentscan-filter</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.29</version>
+            <version>5.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -20,5 +19,11 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
     </dependencies>
+
 </project>
