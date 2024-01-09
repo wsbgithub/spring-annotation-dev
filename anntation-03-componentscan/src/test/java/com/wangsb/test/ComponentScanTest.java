@@ -48,6 +48,10 @@ public class ComponentScanTest {
         //1.获取容器
         ApplicationContext ac = new AnnotationConfigApplicationContext(ComponentScanClass.class);
         //2.根据id获取对象
+        String[] beanDefinitionNames = ac.getBeanDefinitionNames();
+        for (String beanDefinitionName : beanDefinitionNames) {
+            System.out.println("beanDefinitionName = " + beanDefinitionName);
+        }
         UserService userService = ac.getBean(UserService.class);
         userService.delete();
     }
