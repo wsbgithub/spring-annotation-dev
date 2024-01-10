@@ -8,11 +8,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author wangshenbing
  * @date 2024/01/10
  **/
-public class ImportSelectorTest {
+public class ImportBeanDefinitionRegistrarTest {
 
     @Test
     public void test() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+
         String[] beanDefinitionNames = context.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
             /**
@@ -21,10 +22,9 @@ public class ImportSelectorTest {
              * org.springframework.context.event.internalEventListenerProcessor
              * org.springframework.context.event.internalEventListenerFactory
              * springConfiguration
-             * com.wangsb.test.ImportSelectorTest
-             * com.wangsb.utils.LogUtil
-             * com.wangsb.service.impl.UserServiceImpl
-             * 实例名称为全类名
+             * userServiceImpl
+             * logUtil
+             * 实例名称为类名首字母小写
              */
             System.out.println(beanDefinitionName);
         }
