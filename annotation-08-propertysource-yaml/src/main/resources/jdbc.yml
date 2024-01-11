@@ -1,0 +1,9 @@
+#Yet Another Markup Language 另一种标记语言
+#YAML  yml
+#写法：同一级的顶头写。 描述从属关系，另起一行，通常空两格书写。只要同一级从属，空格数相同即可。
+#键和值之间用冒号加空格分隔
+jdbc:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/spring-study??useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useAffectedRows=true&allowMultiQueries=true
+  username: root
+  password: 123456
